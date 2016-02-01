@@ -1,9 +1,19 @@
 *{
-	color: white
+	font-family:"Courier New";
+}
+a{
+	color: #0e232d;
+	style:bold;
+}
+body{
+	margin: 0px
+}
+a:hover, nav li a.current{
+		color: #018918;
 }
 
 @font-face {
-    font-family: 'intro_head_rbase';
+        font-family: 'intro_head_rbase';
     src:url('introheadr-base-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -11,14 +21,26 @@
 	width: 400px;
 	height: 200px;
 }
-body{
-
+#blockquote{
+	background-color: #0e232d;
+	color:#589f67;
+	padding: 10px 100px;
+	opacity:.6;
 }
+
 h1{
-
-font-family: 'intro_head_rbase';
+	font-family: 'intro_head_rbase';
+	text-align: center;
 }
+h3{
+	font-family: veranda;
 
+p{
+	font-family: courier;
+	color: black
+	
+}
+}
 .background{
 	width:100%;
 	height: 100%;
@@ -28,8 +50,10 @@ font-family: 'intro_head_rbase';
 	z-index:-1;
 }
 .pictures{
-	border:5px solid #616766;
+	border:10px solid #616766;
 	display: inline-block;
+	padding: 5px 5px 0px 5px;
+	margin:20px;
 
 }
 .resize{
@@ -38,13 +62,14 @@ font-family: 'intro_head_rbase';
 
 #list ol{
 	background-color: #0e232d;
-	color:#616766;
+	color:#589f67;
+	padding: 20px 100px;
 
 }
 #nav, footer{
 	clear:both;
-	color: #ffffff;
-	background-color: #616766;
+	color: #0e232d;
+	background-color: #ffffff;
 	height: 30px;
 }
 #nav ul{
@@ -58,25 +83,31 @@ font-family: 'intro_head_rbase';
 }
 
 #nav li a{
-	color: #ffffff;
+	color: #0e232d;
 }
 	
 #nav li a:hover, nav li a.current{
-		color: #000000
+		color: #018918
 	}
-#inlinks{}
-#blockquote{}
-}
+
 
 .resize{
 	max-height:300px
 }
-.button {
-  display: inline-block;
-  height: 30px;
-  background-image: url(normalstate.png);
+
+#button{
+  background-color:red;
+    border: none;
+    color: red;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 30%
 }
-.button:hover {
-  background-image: url(hoverstate.png);
+
+.form{
+	background-color: black;
+	color: white
 }
-/*coppied from stack overflow not sure how works or what to do*/
